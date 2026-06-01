@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="disc" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1a1a1a"/>
+      <stop offset="60%" stop-color="#0d0d0d"/>
+      <stop offset="85%" stop-color="#222"/>
+      <stop offset="100%" stop-color="#111"/>
+    </radialGradient>
+    <radialGradient id="label" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#b8860b"/>
+    </radialGradient>
+  </defs>
+  <!-- Record -->
+  <circle cx="100" cy="100" r="90" fill="url(#disc)" stroke="#333" stroke-width="1"/>
+  <!-- Grooves -->
+  <circle cx="100" cy="100" r="80" fill="none" stroke="#1a1a1a" stroke-width="0.5"/>
+  <circle cx="100" cy="100" r="72" fill="none" stroke="#222" stroke-width="0.4"/>
+  <circle cx="100" cy="100" r="65" fill="none" stroke="#1a1a1a" stroke-width="0.5"/>
+  <circle cx="100" cy="100" r="58" fill="none" stroke="#222" stroke-width="0.3"/>
+  <circle cx="100" cy="100" r="52" fill="none" stroke="#1a1a1a" stroke-width="0.5"/>
+  <!-- Label -->
+  <circle cx="100" cy="100" r="30" fill="url(#label)"/>
+  <circle cx="100" cy="100" r="28" fill="none" stroke="#fff" stroke-width="0.5" opacity="0.3"/>
+  <!-- Label text -->
+  <text x="100" y="95" font-family="Arial,sans-serif" font-weight="bold" font-size="7" fill="#1a0a2e" text-anchor="middle">STAR CATCH</text>
+  <text x="100" y="107" font-family="Arial,sans-serif" font-weight="bold" font-size="5" fill="#1a0a2e" text-anchor="middle">RECORDS</text>
+  <!-- Center hole -->
+  <circle cx="100" cy="100" r="4" fill="#0a0a0a"/>
+  <!-- Shine -->
+  <ellipse cx="70" cy="70" rx="30" ry="15" fill="#fff" opacity="0.03" transform="rotate(-30 70 70)"/>
+</svg>

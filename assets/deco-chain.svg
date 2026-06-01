@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" width="240" height="200">
+  <defs>
+    <linearGradient id="goldlink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="30%" stop-color="#fff9b0"/>
+      <stop offset="50%" stop-color="#ffd700"/>
+      <stop offset="80%" stop-color="#b8860b"/>
+      <stop offset="100%" stop-color="#ffd700"/>
+    </linearGradient>
+    <radialGradient id="diamond" cx="40%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#fff"/>
+      <stop offset="30%" stop-color="#e0f0ff"/>
+      <stop offset="60%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#006080"/>
+    </radialGradient>
+  </defs>
+  <!-- Chain links -->
+  <g fill="none" stroke="url(#goldlink)" stroke-width="4" stroke-linecap="round">
+    <path d="M10 30 Q30 10 50 30 Q70 50 90 30 Q110 10 130 30 Q150 50 170 30 Q190 10 210 30"/>
+    <path d="M10 38 Q30 58 50 38 Q70 18 90 38 Q110 58 130 38 Q150 18 170 38 Q190 58 210 38"/>
+    <path d="M10 46 Q30 26 50 46 Q70 66 90 46 Q110 26 130 46 Q150 66 170 46 Q190 26 210 46"/>
+    <path d="M10 54 Q30 74 50 54 Q70 34 90 54 Q110 74 130 54 Q150 34 170 54 Q190 74 230 54"/>
+  </g>
+  <!-- Diamond pendant -->
+  <polygon points="120,140 155,105 175,120 175,155 155,175 120,175 85,175 65,155 65,120 85,105" fill="url(#diamond)" stroke="#00aaff" stroke-width="1.5"/>
+  <!-- Diamond facets -->
+  <polygon points="120,140 155,105 175,120 155,140" fill="#fff" opacity="0.15"/>
+  <polygon points="120,140 65,120 85,105 120,140" fill="#fff" opacity="0.08"/>
+  <polygon points="120,175 155,175 175,155 155,140 120,140" fill="#002040" opacity="0.2"/>
+  <polygon points="85,175 65,155 65,120 85,105 120,140" fill="#002040" opacity="0.15"/>
+  <!-- Diamond sparkle -->
+  <circle cx="130" cy="115" r="3" fill="#fff" opacity="0.6"/>
+  <circle cx="100" cy="140" r="2" fill="#fff" opacity="0.4"/>
+  <circle cx="140" cy="160" r="1.5" fill="#fff" opacity="0.3"/>
+</svg>
