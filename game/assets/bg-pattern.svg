@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="none"/>
+      <line x1="0" y1="0" x2="40" y2="0" stroke="#ffd700" stroke-width="0.3" opacity="0.08"/>
+      <line x1="0" y1="0" x2="0" y2="40" stroke="#ffd700" stroke-width="0.3" opacity="0.08"/>
+    </pattern>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#9b59b6" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#1a0a2e" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="200" height="200" fill="#0a001a"/>
+  <rect width="200" height="200" fill="url(#grid)"/>
+  <circle cx="100" cy="100" r="80" fill="url(#glow)"/>
+  <!-- Crosshair dots -->
+  <circle cx="100" cy="100" r="1.5" fill="#ffd700" opacity="0.15"/>
+  <circle cx="60" cy="100" r="1" fill="#ffd700" opacity="0.1"/>
+  <circle cx="140" cy="100" r="1" fill="#ffd700" opacity="0.1"/>
+  <circle cx="100" cy="60" r="1" fill="#ffd700" opacity="0.1"/>
+  <circle cx="100" cy="140" r="1" fill="#ffd700" opacity="0.1"/>
+</svg>
