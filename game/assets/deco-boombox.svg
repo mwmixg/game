@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 180" width="260" height="180">
+  <defs>
+    <linearGradient id="box" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#555"/>
+      <stop offset="30%" stop-color="#444"/>
+      <stop offset="100%" stop-color="#222"/>
+    </linearGradient>
+    <radialGradient id="speaker" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#333"/>
+      <stop offset="60%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </radialGradient>
+  </defs>
+  <!-- Main body -->
+  <rect x="10" y="30" width="240" height="120" rx="8" fill="url(#box)" stroke="#111" stroke-width="2"/>
+  <!-- Top detail -->
+  <rect x="10" y="30" width="240" height="12" rx="6" fill="#555"/>
+  <!-- Handle -->
+  <path d="M90 10 Q130 -5 170 10" fill="none" stroke="#666" stroke-width="4" stroke-linecap="round"/>
+  <path d="M90 10 Q130 0 170 10" fill="none" stroke="#888" stroke-width="2" stroke-linecap="round"/>
+  <!-- Left speaker -->
+  <circle cx="70" cy="95" r="38" fill="url(#speaker)" stroke="#555" stroke-width="2"/>
+  <circle cx="70" cy="95" r="30" fill="none" stroke="#444" stroke-width="1"/>
+  <circle cx="70" cy="95" r="22" fill="none" stroke="#3a3a3a" stroke-width="1"/>
+  <circle cx="70" cy="95" r="14" fill="none" stroke="#444" stroke-width="0.8"/>
+  <circle cx="70" cy="95" r="6" fill="#444"/>
+  <!-- Right speaker -->
+  <circle cx="190" cy="95" r="38" fill="url(#speaker)" stroke="#555" stroke-width="2"/>
+  <circle cx="190" cy="95" r="30" fill="none" stroke="#444" stroke-width="1"/>
+  <circle cx="190" cy="95" r="22" fill="none" stroke="#3a3a3a" stroke-width="1"/>
+  <circle cx="190" cy="95" r="14" fill="none" stroke="#444" stroke-width="0.8"/>
+  <circle cx="190" cy="95" r="6" fill="#444"/>
+  <!-- Cassette area -->
+  <rect x="95" y="50" width="70" height="50" rx="4" fill="#1a1a1a" stroke="#555" stroke-width="1.5"/>
+  <rect x="100" y="55" width="60" height="20" rx="2" fill="#222"/>
+  <!-- Cassette reels -->
+  <circle cx="117" cy="65" r="6" fill="#444" stroke="#555" stroke-width="0.8"/>
+  <circle cx="143" cy="65" r="6" fill="#444" stroke="#555" stroke-width="0.8"/>
+  <circle cx="117" cy="65" r="2" fill="#666"/>
+  <circle cx="143" cy="65" r="2" fill="#666"/>
+  <!-- Tape window -->
+  <rect x="105" y="78" width="50" height="12" rx="2" fill="#1a0a2e" opacity="0.5"/>
+  <!-- Buttons -->
+  <g fill="#888" rx="2">
+    <rect x="100" y="100" width="12" height="8"/>
+    <rect x="115" y="100" width="12" height="8"/>
+    <rect x="130" y="100" width="12" height="8"/>
+    <rect x="145" y="100" width="12" height="8"/>
+  </g>
+  <!-- Gold accent stripe -->
+  <rect x="10" y="145" width="240" height="3" fill="#ffd700" opacity="0.6"/>
+  <!-- Feet -->
+  <rect x="25" y="148" width="15" height="6" rx="2" fill="#111"/>
+  <rect x="220" y="148" width="15" height="6" rx="2" fill="#111"/>
+</svg>

@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0a0a0a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  overflow: hidden;
+  background-image: url('../assets/bg-cityscape.svg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#wrapper {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  border: 3px solid #ffd700;
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.3), inset 0 0 20px rgba(255, 215, 0, 0.05);
+  background-image: url('../assets/bg-pattern.svg');
+  background-size: 200px 200px;
+}
+
+#gameCanvas {
+  display: block;
+  width: 800px;
+  height: 600px;
+  background: #1a0a2e;
+}
+
+/* ===== OVERLAYS ===== */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(10, 10, 20, 0.88);
+  color: #fff;
+  z-index: 10;
+  text-align: center;
+  backdrop-filter: blur(2px);
+  overflow: hidden;
+}
+
+.overlay-bg {
+  position: absolute;
+  opacity: 0.12;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.overlay-bg.left-deco {
+  left: -30px;
+  bottom: -20px;
+  width: 180px;
+  height: 180px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.overlay-bg.right-deco {
+  right: -20px;
+  top: -10px;
+  width: 140px;
+  height: 140px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.overlay-bg.splash-deco {
+  left: 50%;
+  top: 10px;
+  width: 100px;
+  height: 80px;
+  transform: translateX(-50%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.08;
+}
+
+.overlay-bg.skull-deco {
+  right: 30px;
+  bottom: 10px;
+  width: 100px;
+  height: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.08;
+}
+
+.overlay.hidden {
+  display: none;
+}
+
+.overlay h1 {
+  font-family: 'Bangers', cursive;
+  font-size: 52px;
+  line-height: 1.1;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+}
+
+.neon-gold {
+  color: #ffd700;
+  text-shadow:
+    0 0 7px #ffd700,
+    0 0 14px #ffd700,
+    0 0 28px #ffd700,
+    0 0 42px #b8860b;
+}
+
+.overlay .subtitle {
+  font-family: 'Russo One', sans-serif;
+  font-size: 18px;
+  color: #ff6b81;
+  text-shadow: 0 0 10px rgba(255, 107, 129, 0.5);
+  margin-bottom: 6px;
+}
+
+.decor-line {
+  width: 240px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #ffd700, #9b59b6, #ffd700, transparent);
+  margin: 10px 0 16px;
+  border-radius: 2px;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.4);
+}
+
+.overlay p {
+  font-family: 'Russo One', sans-serif;
+  font-size: 16px;
+  margin-bottom: 4px;
+  color: #e0e0e0;
+}
+
+.overlay .highlight {
+  color: #ffd700;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+  font-size: 22px;
+}
+
+.overlay .hint {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 4px;
+}
+
+.overlay .footer-msg {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 12px;
+  color: #666;
+  margin-top: 14px;
+}
+
+/* ===== BUTTONS ===== */
+.btn-gold {
+  margin-top: 14px;
+  padding: 14px 52px;
+  font-family: 'Bangers', cursive;
+  font-size: 26px;
+  letter-spacing: 2px;
+  border: 2px solid #ffd700;
+  border-radius: 4px;
+  background: linear-gradient(135deg, #2a1a0a 0%, #1a0a00 100%);
+  color: #ffd700;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.2), inset 0 0 15px rgba(255, 215, 0, 0.05);
+}
+
+.btn-gold:hover {
+  transform: scale(1.06);
+  background: linear-gradient(135deg, #3a2a0a 0%, #2a1a00 100%);
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.5), inset 0 0 20px rgba(255, 215, 0, 0.1);
+}
+
+.btn-gold:active {
+  transform: scale(0.96);
+}

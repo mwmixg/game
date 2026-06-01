@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 160" width="200" height="160">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="50%" stop-color="#ffaa00"/>
+      <stop offset="100%" stop-color="#b8860b"/>
+    </linearGradient>
+    <linearGradient id="gem" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6b81"/>
+      <stop offset="100%" stop-color="#e74c3c"/>
+    </linearGradient>
+    <linearGradient id="gem2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#2980b9"/>
+    </linearGradient>
+  </defs>
+  <!-- Crown body -->
+  <path d="M10 140 L30 30 L65 70 L100 10 L135 70 L170 30 L190 140 Z" fill="url(#gold)" stroke="#8b6508" stroke-width="2"/>
+  <!-- Crown base -->
+  <rect x="10" y="130" width="180" height="20" rx="3" fill="url(#gold)" stroke="#8b6508" stroke-width="1.5"/>
+  <!-- Base stripes -->
+  <rect x="30" y="135" width="3" height="12" fill="#8b6508" opacity="0.5"/>
+  <rect x="70" y="135" width="3" height="12" fill="#8b6508" opacity="0.5"/>
+  <rect x="100" y="135" width="3" height="12" fill="#8b6508" opacity="0.5"/>
+  <rect x="130" y="135" width="3" height="12" fill="#8b6508" opacity="0.5"/>
+  <rect x="165" y="135" width="3" height="12" fill="#8b6508" opacity="0.5"/>
+  <!-- Red gem -->
+  <circle cx="100" cy="105" r="12" fill="url(#gem)" stroke="#8b0000" stroke-width="1"/>
+  <circle cx="100" cy="102" r="4" fill="#fff" opacity="0.3"/>
+  <!-- Blue gems -->
+  <circle cx="45" cy="115" r="7" fill="url(#gem2)" stroke="#1a5276" stroke-width="1"/>
+  <circle cx="45" cy="113" r="2" fill="#fff" opacity="0.3"/>
+  <circle cx="155" cy="115" r="7" fill="url(#gem2)" stroke="#1a5276" stroke-width="1"/>
+  <circle cx="155" cy="113" r="2" fill="#fff" opacity="0.3"/>
+  <!-- Glow -->
+  <ellipse cx="100" cy="80" rx="90" ry="15" fill="#ffd700" opacity="0.08"/>
+</svg>
