@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hip-Hop Star Catch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Russo+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="wrapper">
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+    <!-- Start Screen -->
+    <div id="startScreen" class="overlay">
+      <h1 class="neon-gold">🎤 HIP-HOP<br>STAR CATCH</h1>
+      <p class="subtitle">Catch the bling, drop the beat!</p>
+      <div class="decor-line"></div>
+      <p class="hint">← → or A D — move yo' self</p>
+      <p class="hint">Miss 3 = Game Over, homie!</p>
+      <button id="startBtn" class="btn-gold">▶  LET'S GO!</button>
+      <p class="footer-msg">press SPACE or click</p>
+    </div>
+
+    <!-- Level transition -->
+    <div id="levelScreen" class="overlay hidden">
+      <h1 id="levelTitle" class="neon-gold">LEVEL UP!</h1>
+      <p class="subtitle">Next level droppin'!</p>
+      <div class="decor-line"></div>
+      <p>Score: <span id="levelScore" class="highlight">0</span></p>
+      <button id="levelContinueBtn" class="btn-gold">▶  BRING IT ON!</button>
+    </div>
+
+    <!-- Win screen -->
+    <div id="winScreen" class="overlay hidden">
+      <h1 class="neon-gold">🏆 YOU DA MVP!</h1>
+      <p class="subtitle">Straight fire! You crushed it!</p>
+      <div class="decor-line"></div>
+      <p>Final Score: <span id="winScore" class="highlight">0</span></p>
+      <button id="restartWinBtn" class="btn-gold">↻  PLAY AGAIN</button>
+    </div>
+
+    <!-- Lose screen -->
+    <div id="loseScreen" class="overlay hidden">
+      <h1 class="neon-gold">💀 GAME OVER</h1>
+      <p class="subtitle">Better luck next time, playa!</p>
+      <div class="decor-line"></div>
+      <p>Score: <span id="loseScore" class="highlight">0</span></p>
+      <button id="restartLoseBtn" class="btn-gold">↻  TRY AGAIN</button>
+    </div>
+  </div>
+
+  <script src="js/player.js"></script>
+  <script src="js/fallingObject.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/renderer.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
